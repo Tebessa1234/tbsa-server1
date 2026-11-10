@@ -272,6 +272,7 @@ public class MainActivity extends Activity {
         web.setVisibility(View.VISIBLE);
         web.requestFocus();
         web.loadUrl(base + (tv ? "/?tv=1" : "/?tv=0"));
+        Updater.check(this, base, prefs);
     }
 
     /* ---------- Recherche automatique du serveur (réseau local) ---------- */
